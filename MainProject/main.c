@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-char* playRPS(char*, char*) {
-
-
-
+char* playRPS(char* player1, char* player2) {
+	return "";
 }
 
 
