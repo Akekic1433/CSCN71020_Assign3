@@ -10,7 +10,7 @@ namespace UnitTest
 	TEST_CLASS(testClassPlayRPS)
 	{
 	public:
-		
+		// Player1 Tests
 		TEST_METHOD(test1Player1)
 		{
 			char* expected = "Player1";
@@ -31,6 +31,8 @@ namespace UnitTest
 				Assert::AreEqual(expected[i], actual[i]);
 			}
 		}
+
+		// Player2 Tests
 		TEST_METHOD(test1Player2)
 		{
 			char* expected = "Player2";
@@ -41,6 +43,8 @@ namespace UnitTest
 				Assert::AreEqual(expected[i], actual[i]);
 			}
 		}
+
+		// Draw Tests
 		TEST_METHOD(test1Draw)
 		{
 			char* expected = "Draw";
@@ -61,6 +65,8 @@ namespace UnitTest
 				Assert::AreEqual(expected[i], actual[i]);
 			}
 		}
+
+		//Invalid Tests
 		TEST_METHOD(test1Invalid)
 		{
 			char* expected = "Invalid";

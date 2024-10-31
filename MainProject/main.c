@@ -2,10 +2,12 @@
 #include <string.h>
 
 char* playRPS(char* player1, char* player2) {
+	// Draw
 	if (!strcmp(player1, player2)) {
 		return "Draw";
 	}
 
+	// Victory
 	if (!strcmp(player1, "rock")) {
 		if (!strcmp(player2, "paper")) {
 			return "Player2";
@@ -30,6 +32,8 @@ char* playRPS(char* player1, char* player2) {
 			return "Player1";
 		}
 	}
+
+	// else, Invalid
 	return "Invalid";
 }
 
