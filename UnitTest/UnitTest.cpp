@@ -81,5 +81,15 @@ namespace UnitTest
 				Assert::AreEqual(expected[i], actual[i]);
 			}
 		}
+		TEST_METHOD(test3Invalid)
+		{
+			char* expected = "Invalid";
+			char* player1 = "Rock";
+			char* player2 = "paper";
+			char* actual = playRPS(player1, player2);
+			for (int i = 0; i < strlen(expected); i++) {
+				Assert::AreEqual(expected[i], actual[i]);
+			}
+		}
 	};
 }
